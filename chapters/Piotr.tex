@@ -1,0 +1,67 @@
+\documentclass[../DeadPxlz.tex]{subfiles}
+\graphicspath{{\subfix{../pictures/}}}
+
+\begin{document}
+
+\label{sec:piotr}
+\section{Rozdział Piotra}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=10cm]{octopus_ch_piotr.jpg}
+    \label{fig:octopus}
+    \caption{Ośmiornica zwyczajna}
+\end{figure}
+
+\vspace{5pt}
+
+\begin{Large}
+    \begin{equation}
+        \label{eq:sequence}
+        a_n=\prod_{k=1}^{n}{\left(1+\frac{1}{2^k}\right)}, n \in \mathbb{N}
+    \end{equation}
+\end{Large}
+
+\begin{Large}
+    \begin{equation}
+        \label{eq:property}
+        \forall_{n \in \mathbb{N}} \: a_n=\prod_{k=1}^{n}{\left(1+\frac{1}{2^k}\right)} < e
+    \end{equation}
+\end{Large}
+
+\subfile{../tables/tabelapiotr}
+
+\begin{figure}
+    \label{fig:info}
+    \centering
+    Podstawowe informacje na temat ciągu $a_n$:\\
+    \begin{itemize}
+        \item ciąg $a_n$ jest rosnący,
+        \item ciąg $a_n$ jest ograniczony,
+        \item ciąg $a_n$ ma granicę.
+    \end{itemize}
+    \caption{Informacje o ($a_n$)}
+\end{figure}
+
+\newpage
+\begin{figure}[!ht]
+    \label{fig:proof}
+    \centering
+    Aby udowodnić te własności wystarczy:\\
+    \begin{enumerate}
+        \item pokazać, że $\forall_{n \in \mathbb{N}} a_n>0$,
+        \item pokazać, że $\forall_{n \in \mathbb{N}} \frac{a_{n+1}}{a_n}>1$,
+        \item pokazać, że ciąg $\left( a_n \right)$ jest ograniczony, korzystając z nierówności między średnimi,
+        \item z dwóch poprzednich własności wynika, że ciąg $\left( a_n \right)$ ma granicę.
+    \end{enumerate}
+    \caption{Dowód własności ($a_n$)}
+\end{figure}
+
+\setlength{\parindent}{5ex}
+\justifying
+\par
+W celu zachowania spójności tekstu, wstawione zostało zdjęcie \textit{ośmiornicy zwyczajnej} (\ref{fig:octopus}), będącej \emph{zwierzęciem}. Treść rozdziału nie będzie jednak związana z tymi mięczakami.
+\par
+Tematem tego rozdziału jest podanie podstawowych informacji na temat \textbf{ciągu} \ref{eq:sequence}. Podana została \underline{własność \ref{eq:property}} oraz $3$ podstawowe informacje na jego temat (\ref{fig:info}). Kilka początkowych wyrazów ciągu zostało umieszczonych w tabeli \ref{tab:sequence}. Podany jest również schemat dowodzenia opisanych własności (\ref{fig:proof}).
+
+\end{document}
